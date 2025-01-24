@@ -1,13 +1,9 @@
 import { TableCell, TableRow } from "@mui/material";
+import { Deck } from "../../domain/Deck";
 
-interface Props {
-  name: string;
-  cat1: string;
-  cat2: string;
-  cat3: string;
-}
+interface Props extends Deck { }
 
-function Deck({cat1, cat2, cat3, name}: Props) {
+function DeckRow({cat1, cat2, cat3, name}: Props) {
   return (
     <TableRow>
       <TableCell>{name}</TableCell>
@@ -18,4 +14,4 @@ function Deck({cat1, cat2, cat3, name}: Props) {
   );
 }
 
-export default Deck;
+export default DeckRow;
