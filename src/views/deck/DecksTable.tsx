@@ -1,13 +1,15 @@
 import {
   Box,
+  Button,
+  Paper,
   Table,
   TableBody,
   TableCell,
   TableContainer,
-  TableRow,
   TableHead,
-  Paper,
+  TableRow,
 } from "@mui/material";
+import { Link } from "react-router";
 
 function DecksTable() {
   return (
@@ -44,6 +46,20 @@ function DecksTable() {
               <TableCell align="center">X</TableCell>
               <TableCell align="center">Y</TableCell>
               <TableCell align="center">Z</TableCell>
+            </TableRow>
+            {/* Add deck row */}
+            <TableRow>
+              <TableCell>
+                <Button
+                  fullWidth={true}
+                  variant="text"
+                  color="info"
+                  component={Link}
+                  to={"/add-deck"}
+                >
+                  Agregar un nuevo deck
+                </Button>
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
