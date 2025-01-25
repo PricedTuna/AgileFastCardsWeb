@@ -1,9 +1,9 @@
 import { TableCell, TableRow } from "@mui/material";
-import { Deck } from "../../domain/Deck";
+import { Deck } from "../../core/domain/Deck";
 
 interface Props extends Deck { }
 
-function DeckRow({cat1, cat2, cat3, name}: Props) {
+function DeckRow({cat1, cat2, cat3, title: name}: Props) {
   return (
     <TableRow>
       <TableCell>{name}</TableCell>

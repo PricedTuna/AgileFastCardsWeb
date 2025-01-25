@@ -4,7 +4,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import AppRouter from './router/AppRouter';
 import { ThemeProvider } from "@mui/material/styles";
-import theme from './config/theme';
+import theme from './core/config/theme';
 import { CssBaseline } from '@mui/material';
 
 function App() {
